@@ -1,0 +1,59 @@
+#Task 1
+sudo groupadd -g 4001 dave
+sudo useradd -u 4001 -g 4001 -md /home/pink/dave dave
+sudo groupadd -g 4002 roger
+sudo useradd -u 4002 -g 4002 -md /home/pink/roger roger
+sudo groupadd- g 4003 nick
+sudo useradd -u 4003 -g 4003 -md /home/pink/nick nick
+sudo groupadd -g 4004 richard
+sudo useradd -u 4004 -g 4004 -md /home/pink/richard richard
+sudo passwd dave, password is banana23 so I have to enter it in twice to confirm.
+sudo passwd roger, password is apple59
+sudo passwd nick, password is orange90
+sudo passwd richard, password is lemon37
+Used cat /etc/passwd to check if they were there and then I logged into them.
+
+#Task 2
+sudo groupadd -g 10000 guitars
+sudo usermod -G 10000 dave
+sudo usermod -G 10000 roger
+I used less /etc/group to find guitars and then I logged into dave and roger and checked their groups with the command groups.
+
+#Task 3
+Alt f5 to get to new terminal and logged in as dave
+mkdir collaborative
+chgrp guitars collaborative
+sudo chgrp g+s collaborative
+I then used ls -l to check the group owner of collaborative and I did sudo chgrp g+S collaborative as the administrator to make all
+new files created in the directory have their group as the directory's group which is guitars. I did umask to allow group permissions for the new files created. I then made two separate files under dave and roger and edited as the respective user. I then editied dave's file as roger and roger's file as dave.
+
+#Task 4
+Run the command umask, gets 0002
+default permissions for files is; -rw-rw-r--
+default permissions for directories is; rwxrwxr-x
+Default permissions for files is 666 minus the umask. 664
+Default permissions for directories is 777 minus the umask. 775
+
+#Task 5
+the permissions wanted for files is rw--w-r--, 624
+the permissions wanted for directories is rwx-wxr--, 734
+777-734=043
+I set umsk to 043 and created a file and directory to check the permissions and they were correct. So I logged out and added to umask 043 to .bashrc at the top. I logged out and logged back in.
+I created a new file and a new directory and checked their permissions and they were the default wanted.
+
+#Task 6
+Added umask 0173 to /etc/profile at the top as the administartor. I then logged into several of the accounts and tested it. Richard is still the one set for Task 5 instead of the system default.
+
+#Task 7
+sudo usermod -m -d /home/chaos/roger/ roger
+I checked the creation of chaos and roger by doing ls /home/chaos. I then logged into roger and had access.
+
+#Task 8
+sudo usermod -u 5001 dave
+sudo chgrp g+s collaborative
+After I changed the uID I logged into dave and checked his files and directories and everything was still fine.
+
+#Task 9
+sudo groupmod -g 20000 guitars
+I did cat /etc/group and found guitars. Along with dave and roger following the name and id.
+
