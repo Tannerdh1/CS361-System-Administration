@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#Variables for directory being restored and the day to be restored to
+directory=$1
+day=$2
+
+#
+if [] ; then
+    tar -xvf /Backups/$1/$day$1.tgz -C $1
+else
+    echo "No backup for that day"
+fi

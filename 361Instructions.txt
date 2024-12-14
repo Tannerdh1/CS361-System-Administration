@@ -1,0 +1,22 @@
+Write down the eno1 eth info
+
+Deselect the initial storage stuff and select custom storage layout
+Reformat the local disk. 
+Add GPT partitions
+1. /boot - 500M - ext4 - /boot
+2. / - 23G - ext4 - /
+3. /var -10G - ext4 - /var
+4. /swap - 16G - swap
+5. /home - 10G - ext4 - /home
+That's it for the storage
+
+Name: enter your own name
+server name: do something like cameron-server
+username: administrator
+password: r0@n0ke
+
+install OpenSSH server. None for SSH identity
+
+Don't select any snaps
+
+once all that is done you'll reboot and then install the normal stuff you need like emacs and net-tools

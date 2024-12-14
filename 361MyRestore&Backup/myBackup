@@ -1,0 +1,30 @@
+#!/bin/sh
+
+#Variables for weeks, the directory being backed up, and the date (0-6)
+maxWeeks=`cat ./Backups/backup.config`
+directory=$1
+date=$(date +%w)
+
+echo $date$1.tgz
+#Sunday
+if [ $date = 0 ]; then
+    if [ ! -d "Backups/$1" ]; then
+	mkdir Backups/$1/$date/ -p
+    fi
+    
+    #if [; then
+#	tar -czvf /Backups/$1/($1)1.tgz /Backups/$1/0 /Backups/$1/1 /Backups/$1/2 /Backups/$1/3 /Backups/$1/4 /Backups/$1/5 /Backups/$1/6
+ #   fi
+    
+    tar --listed-incremental=Backups/$1/backup-list.snar -czvf Backups/$1/$date/$1.tgz $1 
+fi
+
+#Monday-Saturday
+if [ $date != 0 ]; then
+    if [ ! -d "Backups/$1/$date" ]; then
+	mkdir Backups/$1/$date -p
+    fi
+
+    tar --listed-incremental=Backups/$1/backup-list.snar -czvf Backups/$1/$date/$date$1.tgz $1
+    
+fi

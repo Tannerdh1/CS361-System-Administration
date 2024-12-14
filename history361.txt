@@ -1,0 +1,1000 @@
+  185  touch cluster
+  186  emacs -nw cluster
+  187  cssh group1
+  188  cssh -c \$HOME/.clusterssh/clusters/clusters
+  189  cssh -c $HOME/.clusterssh/clusters/clusters
+  190  cssh -c $HOME/.clusterssh/clusters clusters
+  191  emacs -nw cluster
+  192  cssh -c $HOME/.clusterssh/clusters clusters
+  193  cssh -c $HOME/.clusterssh/clusters clusters group1
+  194  cssh group1
+  195  emacs -nw cluster
+  196  cssh group1
+  197  emacs -nw cluster
+  198  cssh group2
+  199  cd ..
+  200  ls
+  201  emacs -nw cluster
+  202  cd clusters/
+  203  cd etc/hosts
+  204  cd /etc/hosts
+  205  cd /etc
+  206  ls
+  207  cat hosts
+  208  sudo emacs -nw hosts
+  209  ssh sean
+  210  ssh paula@paula
+  211  ssh paula
+  212  ssh davis
+  213  ssh austin
+  214  exit
+  215  ssh cameron
+  216  cssh cameron sean
+  217  cssh cameron sean vess austin
+  218  emacs -nw cluster
+  219  cd 
+  220  cd home
+  221  ls
+  222  mkdir B/X
+  223  mkdir B
+  224  ls
+  225  cd B
+  226  ls
+  227  mkdir X
+  228  mkdir Y
+  229  ls
+  230  cd X
+  231  touch A.txt
+  232  touch B.txt
+  233  cd ..
+  234  cd Y
+  235  touch M.txt
+  236  touch N.txt
+  237  cd ..
+  238  cd Y
+  239  ln -sf ../X/A.txt A1
+  240  ls
+  241  ls -l
+  242  emacs -nw A1
+  243  cd ..
+  244  cd X
+  245  emacs -nw A.txt
+  246  cd ..
+  247  cd Y
+  248  rm A1
+  249  ls
+  250  cd 
+  251  cd X
+  252  cd B
+  253  cd X
+  254  ls
+  255  cd ../Y
+  256  ln -f ../X/B.txt B1
+  257  ls
+  258  ls -l
+  259  emacs -nw B1
+  260  cd ../X
+  261  ls
+  262  emacs -nw B.txt 
+  263  cd ../Y
+  264  emacs -nw B1
+  265  fg
+  266  emacs -nw B1
+  267  fg
+  268  cd ../X
+  269  emacs -nw B.txt
+  270  man ln
+  271  cd ../Y
+  272  rm B1
+  273  ln ../X/B.txt B1
+  274  cat B1
+  275  emacs -nw B1
+  276  cat ../X/B1
+  277  cat ../X/B.txt 
+  278  emacs -nw B1
+  279  ln -s ../X/A.txt A1
+  280  ls
+  281  rm ../X/A.txt
+  282  ls
+  283  cat A1
+  284  rm ../X/B.txt
+  285  ls
+  286  cat B1
+  287  man ccsh
+  288  man cssh
+  289  ifconfig
+  290  man cssh
+  291  man -k network
+  292  man cssh
+  293  ifconfig
+  294  wall meow :3
+  295  wall Meowwall meow :3! Good job guys keep it up! Look at this kitty -> :3
+  296  ls
+  297  rm :3
+  298  ls
+  299  wall Sand is course, and rough, and gets everywhere...
+  300  wall You lost the game.
+  301  cd /etc/apache2
+  302  ls
+  303  emacs -nw apache2.conf 
+  304  ifconfig
+  305  ls
+  306  emacs -nw ports.conf 
+  307  sudo emacs -nw ports.conf 
+  308  emacs -nw ports.conf 
+  309  fg
+  310  sudo service apache2 restart
+  311  emacs -nw apache2.conf 
+  312  cd ..
+  313  mkdir /Web
+  314  sudo mkdir /Web
+  315  ls
+  316  cd Web
+  317  ls
+  318  cd ..
+  319  cd /etc/apache2
+  320  ls
+  321  emacs -nw apache2.conf 
+  322  sudo emacs -nw apache2.conf 
+  323  sudo emacs -nw envvars 
+  324  sudo emacs -nw ports.conf
+  325  sudo emacs -nw apache2.conf 
+  326  cd sites-
+  327  cd sites-available/
+  328  ls
+  329  emacs -nw 000-default.conf 
+  330  sudo emacs -nw 000-default.conf 
+  331  cd ..
+  332  cd sites-enabled/
+  333  ls
+  334  emacs -nw 000-default.conf 
+  335  cd ..
+  336  sudo emacs -nw apache2.conf 
+  337  cd sites-available/
+  338  ls
+  339  emacs 000-default.conf
+  340  emacs -nw 000-default.conf
+  341  emacs -nw default-ssl.conf 
+  342  emacs -nw privateweb-default.conf
+  343  emacs -nw default-ssl.conf 
+  344  emacs -nw 000-default.conf
+  345  emacs -nw default-ssl.conf 
+  346  emacs -nw privateweb-default.conf
+  347  sudo emacs -nw privateweb-default.conf
+  348  cd ..
+  349  ls
+  350  sudo mkdir /PrivateWeb
+  351  ls
+  352  cd /etc/apache2/
+  353  ls
+  354  cd sites-
+  355  cd sites-available/
+  356  ls
+  357  a2ensite
+  358  sudo a2ensite
+  359  systemcl reload apache2
+  360  systemctl reload apache2
+  361  sudo emacs -nw privateweb-default.conf
+  362  sudo a2ensite
+  363  systemcl reload apache2
+  364  cd ..
+  365  ls
+  366  emacs -nw apache2.conf
+  367  sudo emacs -nw apache2.conf
+  368  sudo emacs -nw ports.conf
+  369  cd ..
+  370  ls -l
+  371  ls -l /apache2
+  372  ls 
+  373  cd apache2/
+  374  ls -l
+  375  cd ..
+  376  ls
+  377  ls -l
+  378  cd /etc/apache2
+  379  ls
+  380  ls -l
+  381  cd sites-
+  382  cd sites-enabled/
+  383  ls 
+  384  cd ..
+  385  emacs -nw ports.conf
+  386  sudo emacs -nw apache2.conf
+  387  cd /var/www
+  388  ls
+  389  cd html
+  390  ls
+  391  cd /Web
+  392  touch index.html
+  393  sudo touch index.html
+  394  emacs -nw index.html
+  395  cd ..
+  396  cd /PrivateWeb
+  397  sudo touch index.html
+  398  sudo service apache2 restart
+  399  cd 
+  400  cd /Web
+  401  ls
+  402  ls -l
+  403  cd /var/www/html
+  404  ls
+  405  ls -l
+  406  sudo emacs -nw index.html 
+  407  cd /Web
+  408  rm index.html 
+  409  sudo rm index.html 
+  410  cd /var/www/html
+  411  man cp
+  412  cp index.html /Web/index.html
+  413  sudo cp index.html /Web/index.html
+  414  cd /Web
+  415  ls
+  416  sudo cp index.html /PrivateWeb/index.html
+  417  ls -l
+  418  cd /var/www/html
+  419  cd /etc/apache2
+  420  ls
+  421  cd /var/log/apache2
+  422  ls
+  423  emacs -nw access.log
+  424  cd /Web
+  425  ls -l
+  426  cd /PrivateWeb/
+  427  ls -l
+  428  cd /etc/apache2
+  429  ls
+  430  sudo emacs -nw apache2.conf
+  431  sudo emacs -nw ports.conf
+  432  cd /var/log/apache2
+  433  ls
+  434  emacs -nw error.log 
+  435  cd /etc/apache2
+  436  ls
+  437  cd sites-available/
+  438  sudo emacs -nw 000-default.conf
+  439  sudo emacs -nw privateweb-default.conf
+  440  cd ..
+  441  sudo emacs -nw apache2.conf
+  442  cd sites-enabled/
+  443  ls
+  444  emacs -nw privateweb-default.conf 
+  445  cd ..
+  446  sudo emacs -nw apache2.conf
+  447  cd sites-available/
+  448  ls 
+  449  emacs -nw 000-default.conf
+  450  cd ..
+  451  sudo emacs -nw apache2.conf
+  452  sudo service apache2 restart
+  453  ls
+  454  emacs -nw envvars
+  455  emacs -nw magic
+  456  emacs -nw apache2.conf
+  457  cd /Web
+  458  ls
+  459  sudo rm index.html 
+  460  emacs -nw index.html
+  461  sudo emacs -nw index.html
+  462  cd /PrivateWeb
+  463  sudo rm index.html 
+  464  sudo emacs -nw index.html
+  465  fg
+  466  sudo service apache2 restart
+  467  ls -l
+  468  cd /etc/apache2
+  469  sudo emacs -nw apache2.conf
+  470  sudo service apache2 restart
+  471  cd sites-available/
+  472  emacs -nw privateweb-default.conf
+  473  cd ..
+  474  sudo emacs -nw ports.conf
+  475  cd sites-available/
+  476  emacs -nw privateweb-default.conf
+  477  cd ..
+  478  cd sites-enabled/
+  479  ls
+  480  emacs -nw privateweb-default.conf 
+  481  cd ..
+  482  emacs -nw apache2.conf
+  483  cd /PrivateWeb
+  484  ls
+  485  emacs -nw index.html 
+  486  cd /Web
+  487  emacs -nw index.html 
+  488  sudo apt-get update && sudo apt-get upgrade
+  489  sudo apt-get install apache2
+  490  service apache2 status
+  491  ls
+  492  cd Dow
+  493  cd Downloads/
+  494  ls
+  495  cd ..
+  496  cd Documents/
+  497  ls
+  498  cd /var/www
+  499  ls
+  500  cd /etc/apache2
+  501  ls
+  502  rm apache2.conf~
+  503  sudo rm apache2.conf~
+  504  rm ports.conf~
+  505  sudo \rm ports.conf~
+  506  sudo rm ports.conf~
+  507  ls
+  508  cd sites-available/
+  509  ls
+  510  rm 000-default.conf~
+  511  sudo rm 000-default.conf~
+  512  sudo rm privateweb-default.conf~
+  513  cd ..
+  514  ls
+  515  sudo emacs -nw apache2.conf 
+  516  htpasswd -c /var/www/.htpasswd www
+  517  htpasswd
+  518  sudo htpasswd -c /var/www/.htpasswd www
+  519  sudo service apache2 restart
+  520  emacs -nw apache2.conf
+  521  cd /PrivateWeb/
+  522  ls
+  523  mkdir A
+  524  sudo mkdir A
+  525  ls
+  526  sudo emacs -nw index.html
+  527  cd /etc/apache2
+  528  ls
+  529  sudo emacs -nw apache2.conf
+  530  sudo service apache2 restart
+  531  sudo emacs -nw apache2.conf
+  532  sudo htpasswd -c /var/www/.htpasswd www
+  533  sudo emacs -nw apache2.conf
+  534  cd /var/www
+  535  ls
+  536  ls -la
+  537  sudo emacs -nw htpasswd
+  538  sudo emacs -nw .htpasswd
+  539  sudo emacs -nw apache2.conf
+  540  cd /etc/apache2
+  541  sudo emacs -nw apache2.conf
+  542  cd /home
+  543  ls
+  544  mkdir AttackHelicopter
+  545  sudo mkdir AttackHelicopter
+  546  cd AttackHelicopter/
+  547  sudo groupadd -g 6001 geralt
+  548  sudo groupadd -g 6001 ciri
+  549  sudo groupadd -g 6002 ciri
+  550  sudo groupadd -g 6003 yenn
+  551  sudo useradd -u 6001 -g 6001 -md /home/AttackHelicopter/Geralt -s /bin/bash Geralt
+  552  sudo useradd -u 6002 -g 6002 -md /home/AttackHelicopter/Ciri -s /bin/bash Ciri
+  553  sudo useradd -u 6003 -g 6003 -md /home/AttackHelicopter/Yenn -s /bin/bash Yenn
+  554  cd /etc/apache2
+  555  emacs -nw apache2.conf
+  556  sudo usermod -u 10001
+  557  sudo usermod -u 10001 Geralt
+  558  sudo groupmod -g 10001 geralt
+  559  geralt
+  560  sudo groupmod -g 10002 ciri
+  561  sudo groupmod -g 10003 yenn
+  562  sudo usermod -g 10001 Geralt
+  563  groups Gerlt
+  564  groups Geralt
+  565  sudo usermod -u 10002 -g 10002
+  566  sudo usermod -u 10002 -g 10002 Ciri
+  567  sudo usermod -u 10003 -g 10003 Yenn
+  568  cd /home
+  569  ls
+  570  cd AttackHelicopter/
+  571  ls
+  572  cd Ciri/
+  573  ls
+  574  mkdir A
+  575  cd ..
+  576  ls -l
+  577  sudo rm Ciri
+  578  sudo rmdir Ciri/
+  579  cd Ciri/
+  580  ls
+  581  ls -l
+  582  cd ..
+  583  man rm
+  584  sudo rm -f Ciri/
+  585  sudo rmdir -f Ciri/
+  586  man rmdir
+  587  man rm
+  588  man chown
+  589  rmdir Ciri/
+  590  sudo rmdir Ciri/
+  591  man rm
+  592  sudo rmdir -r Ciri/
+  593  sudo rm -r Ciri/
+  594  sudo rm -r Geralt/
+  595  sudo rm -r Yenn/
+  596  sudo usermod -md /home/AttackHelicopter/Geralt Geralt
+  597  ls
+  598  cd ..
+  599  sudo usermod -dd /home/AttackHelicopter/Geralt Geralt
+  600  sudo usermod -d /home/AttackHelicopter/Geralt Geralt
+  601  ls
+  602  cd AttackHelicopter/
+  603  ls
+  604  man -k user
+  605  sudo userdel Geralt
+  606  sudo userdel Ciri 
+  607  man userdel 
+  608  sudo userdel Yenn
+  609  sudo groupdel geralt
+  610  sudo groupdel ciri
+  611  sudo groupdel yenn
+  612  sudo groupadd -g 10001 geralt
+  613  sudo groupadd -g 10002 ciri
+  614  sudo groupadd -g 10003 yenn
+  615  sudo useradd -u 10001 -g 10001 -md /home/AttackHelicopter/Geralt -s /bin/bash Geralt
+  616  sudo useradd -u 10002 -g 10002 -md /home/AttackHelicopter/Ciri -s /bin/bash Ciri
+  617  sudo useradd -u 10003 -g 10003 -md /home/AttackHelicopter/Yenn -s /bin/bash Yenn
+  618  ls
+  619  ls -l
+  620  cd Geralt/
+  621  ls
+  622  mkdir A
+  623  sudo mkdir A
+  624  sudo mkdir B
+  625  cd ..
+  626  cd Ciri/
+  627  sudo mkdir C
+  628  sudo mkdir D
+  629  cd ..
+  630  cd Yenn/
+  631  sudo mkdir E
+  632  sudo mkdir F
+  633  sudo rmdir E
+  634  sudo rmdir F
+  635  touch e.html
+  636  sudo touch e.html
+  637  sudo touch f.html
+  638  cd ..
+  639  cd Ciri/
+  640  ls
+  641  rmdir C
+  642  sudo rmdir C
+  643  sudo rmdir D
+  644  sudo touch c.html
+  645  sudo touch d.html
+  646  cd ..
+  647  cd Geralt/
+  648  sudo rmdir A
+  649  sudo rmdir B
+  650  sudo touch a.html
+  651  sudo touch b.html
+  652  sudo emacs -nw a.html
+  653  sudo emacs -nw b.html
+  654  UserDir enabled
+  655  cd /etc/apache2/
+  656  ls
+  657  sudo rm apache2.conf~
+  658  cd mods-available/
+  659  ls
+  660  cd ..
+  661  sudo emacs -nw apache2.conf 
+  662  cd mods-available/
+  663  a2enmod userdir 
+  664  sudo a2enmod userdir 
+  665  systemctl restart apache2
+  666  ls
+  667  cd ..
+  668  cd mods-enabled/
+  669  ls
+  670  cd ..
+  671  sudo emacs -nw apache2.conf
+  672  cd mods-enabled/
+  673  emacs -nw userdir.conf
+  674  sudo emacs -nw userdir.conf
+  675  systemctl restart apache2
+  676  sudo emacs -nw userdir.conf
+  677  systemctl restart apache2
+  678  cd /home/AttackHelicopter/
+  679  ls
+  680  cd Geralt
+  681  ls
+  682  cd /etc/apache2/
+  683  ls
+  684  cd mods-enabled/
+  685  cd ..
+  686  cd mods-enabled/
+  687  sudo emacs -nw userdir.conf
+  688  cd ..
+  689  sudo emacs -nw apache2.conf
+  690  systemctl restart apache2
+  691  cd ..
+  692  cd /home/AttackHelicopter/
+  693  ls
+  694  ls -l
+  695  cd Ciri
+  696  ls -l
+  697  cd /etc/apache2/
+  698  ls
+  699  sudo rm '#apache2.conf#' 
+  700  sudo rm apache2.conf~
+  701  ls
+  702  sudo mods-enabled/
+  703  ls
+  704  cd mods-enabled/
+  705  ls
+  706  sudo emacs -nw userdir.conf
+  707  sudo service apache2 restart
+  708  sudo emacs -nw userdir.conf
+  709  sudo service apache2 restart
+  710  systemctl status apache2.service
+  711  sudo service apache2 restart
+  712  sudo emacs -nw userdir.conf
+  713  sudo service apache2 restart
+  714  systemctl status apache2.service
+  715  sudo emacs -nw userdir.conf
+  716  sudo service apache2 restart
+  717  cd ..
+  718  emacs -nw ports.conf 
+  719  cd sites-available/
+  720  ls
+  721  emacs -nw privateweb-default.conf 
+  722  cd ..
+  723  emacs -nw apache2.conf 
+  724  sudo apt-get install nis
+  725  cd /
+  726  mkdir /tannerhome
+  727  sudo mkdir /tannerhome
+  728  cat /etc/passwd
+  729  sudo userdel Geralt
+  730  sudo userdel Ciri
+  731  sudo userdel Yenn
+  732  useradd -u 10001 -g 10001 -md /tannerhome/Geralt -s /bin/bash Geralt
+  733  sudo useradd -u 10001 -g 10001 -md /tannerhome/Geralt -s /bin/bash Geralt
+  734  sudo useradd -u 10002 -g 10002 -md /tannerhome/Ciri -s /bin/bash Ciri
+  735  sudo useradd -u 10003 -g 10003 -md /tannerhome/Yenn -s /bin/bash Yenn
+  736  cat /etc/passwd
+  737  cd tannerhome
+  738  ls
+  739  cd /home
+  740  ls
+  741  sudo rm -r AttackHelicopter/
+  742  ls
+  743  cd /
+  744  sudo passwd geralt
+  745  sudo passwd Geralt
+  746  sudo userdel Geralt
+  747  sudo userdel Ciri
+  748  sudo userdel Yenn
+  749  sudo useradd -u 10001 -g 10001 -md /tannerhome/geralt -s /bin/bash geralt
+  750  sudo useradd -u 10002 -g 10002 -md /tannerhome/ciri -s /bin/bash ciri
+  751  sudo useradd -u 10003 -g 10003 -md /tannerhome/yenn -s /bin/bash yenn
+  752  sudo passwd geralt
+  753  sudo passwd ciri
+  754  sudo passwd yenn
+  755  ls
+  756  cd tannerhome/
+  757  ls
+  758  sudo rmdir Geralt/
+  759  sudo rm -r Geralt/
+  760  sudo rm -r Ciri/
+  761  sudo rm -r Yenn/
+  762  ls
+  763  sudo service nis stop
+  764  service nis status
+  765  cd /etc
+  766  ls
+  767  ls -l
+  768  ls
+  769  emacs -nw defaultdomain
+  770  cd default/
+  771  ls
+  772  emacs -nw nis
+  773  sudo emacs -nw nis
+  774  cd ..
+  775  sudo emacs -nw yp.conf
+  776  ifconfig
+  777  sudo emacs -nw yp.conf
+  778  sudo emacs -nw nis
+  779  sudo emacs -nw defaultdomain 
+  780  cd default/
+  781  ls
+  782  emacs -nw nis
+  783  cd ..
+  784  cd /var/yp
+  785  ls
+  786  sudo mkdir tannernis
+  787  cd tannernis/
+  788  ls
+  789  sudo make -f ../Makefile all
+  790  ls
+  791  sudo service nis start
+  792  ypcat passwd
+  793  su - Brandon
+  794  sudo emacs -nw /etc/nsswitch
+  795  sudo emacs -nw /etc/nsswitch.conf 
+  796  su - Brandon
+  797  su - Liz
+  798  sudo apt-get install nfs
+  799  sudo apt-get install nfs-kernel-server
+  800  su - Liz
+  801  sudo service nis stop
+  802  exit
+  803  cat /etc/nsswitch.conf
+  804  sudo emacs -nw /etc/nsswitch.conf
+  805  cd /var/yp
+  806  ls
+  807  less Makefile 
+  808  cd /
+  809  sudo mkdir /seanhome
+  810  sudo mount -t nfs 192.168.0.134:/seanhome /seanhome
+  811  ls /seanhome
+  812  su - Liz
+  813  sudo emacs -nw /etc/fstab
+  814  sudo umount /seanhome
+  815  sudo mount -a
+  816  ls
+  817  df
+  818  sudo service nis stop\
+  819  sudo service nis stop
+  820  cd /etc/yp
+  821  ls
+  822  cd /etc/ls /etc
+  823  cd /etc
+  824  ls
+  825  emacs -nw yp.conf
+  826  emacs -nw nsswitch.conf
+  827  emacs /etc/default/nis
+  828  sudo emacs -nw /etc/default/nis
+  829  emacs -nw yp.conf
+  830  sudo emacs -nw yp.conf
+  831  ifconfig
+  832  cd ..
+  833  ls
+  834  cd /var/yp
+  835  ls
+  836  cd tannernis/
+  837  ls
+  838  sudo make -f Makefile all
+  839  sudo make -f ../Makefile all
+  840  cd /
+  841  ls
+  842  history
+  843  ls
+  844  cd /etc
+  845  ls
+  846  emacs -nw ypserv.
+  847  emacs -nw ypserv.conf
+  848  emacs default
+  849  sudo emacs defaultdomain
+  850  cd /var/yp
+  851  ls
+  852  cd /etc
+  853  sudo emacs -nw default
+  854  sudo emacs -nw defaultdomain
+  855  sudo apt-get install nfs-kernel-server 
+  856  emacs -nw services 
+  857  emacs -nw exports
+  858  sudo emacs -nw exports
+  859  cd ..
+  860  ls
+  861  ifconfig
+  862  sudo service nis start
+  863  sudo service ypserv start
+  864  sudo ypserv
+  865  history
+  866  sudo service ypserv stop
+  867  sudo service nis stop
+  868  cd /etc
+  869  ls
+  870  sudo emacs -nw yp.conf
+  871  ifconfig
+  872  sudo emacs -nw yp.conf
+  873  ls
+  874  emacs -nw nsswitch.conf
+  875  emacs -nw default
+  876  emacs -nw defaultdomain
+  877  sudo emacs -nw defaultdomain
+  878  sudo emacs -nw /etc/default/nis
+  879  sudo service nis start
+  880  ls
+  881  cd /
+  882  ls
+  883  sudo mkdir /davishome
+  884  sudo mount -t nfs 192.168.0.101:/davishome /davishome
+  885  cd /davishome
+  886  ls
+  887  su - jake
+  888  ls
+  889  sudo service nis stop
+  890  cd /etc
+  891  ls
+  892  sudo emacs -nw /etc/default/nis
+  893  sudo emacs -nw yp.conf
+  894  sudo service nis disable
+  895  cd /etc
+  896  ls
+  897  sudo emacs -nw default
+  898  sudo emacs -nw defaultdomain
+  899  sudo emacs -nw yp.conf
+  900  sudo emacs -nw /etc/default/nis
+  901  cd /var/yp
+  902  ls
+  903  cd tanneris
+  904  ls
+  905  cd tannernis
+  906  ls
+  907  emacs -nw passwd.byname
+  908  sudo emacs -nw passwd.byname
+  909  cat passwd.byname
+  910  sudo cat passwd.byname
+  911  cd ..
+  912  ls
+  913  ip a
+  914  lshw
+  915  cd /
+  916  ifconfig
+  917  sudo ip addr add 192.168.0.207 dev eno1
+  918  ifconfig
+  919  man ip
+  920  ip address show dev eno1
+  921  sudo emacs -nw /etc/netplan/99_config.yaml
+  922  cd /etc/netplan
+  923  ls
+  924  ip
+  925  ip a
+  926  man ip
+  927  sudo ip route add default via 192.168.0.207
+  928  ip route show
+  929  ls
+  930  emacs -nw 01-network-manager-all.yaml 
+  931  sudo emacs -nw 99-config.yaml
+  932  emacs -nw 01-network-manager-all.yaml 
+  933  sudo emacs -nw 99-config.yaml
+  934  ip a
+  935  sudo netplan apply
+  936  sudo emacs -nw 99-config.yaml
+  937  sudo netplan apply
+  938  sudo emacs -nw 99-config.yaml
+  939  sudo netplan apply
+  940  sudo emacs -nw 99-config.yaml
+  941  sudo netplan apply
+  942  sudo emacs -nw 99-config.yaml
+  943  sudo netplan apply
+  944  sudo emacs -nw 99-config.yaml
+  945  sudo netplan apply
+  946  sudo emacs -nw 99-config.yaml
+  947  sudo netplan apply
+  948  sudo emacs -nw 99-config.yaml
+  949  sudo netplan apply
+  950  sudo emacs -nw 99-config.yaml
+  951  sudo netplan apply
+  952  sudo emacs -nw 99-config.yaml
+  953  sudo netplan apply
+  954  sudo emacs -nw 99-config.yaml
+  955  sudo netplan apply
+  956  sudo emacs -nw 99-config.yaml
+  957  sudo netplan apply
+  958  sudo emacs -nw 99-config.yaml
+  959  sudo netplan apply
+  960  sudo emacs -nw 99-config.yaml
+  961  sudo netplan apply
+  962  sudo emacs -nw 99-config.yaml
+  963  sudo netplan apply
+  964  sudo emacs -nw 99-config.yaml
+  965  jobs
+  966  killall emacs
+  967  sudo killall emacs
+  968  jobs
+  969  sudo killall -9 emacs
+  970  jobs
+  971  sudo kill %2
+  972  sudo kill 2
+  973  sudo kill 3
+  974  sudo kill 4
+  975  sudo kill 
+  976  jobs
+  977  fg
+  978  jobs
+  979  sudo netplan apply
+  980  sudo emacs -nw 99-config.yaml
+  981  less /syslog
+  982  ls /
+  983  ps aux | grep yp
+  984  less /var/log/syslog
+  985  cd /etc
+  986  ls
+  987  emacs -nw nsswitch.conf
+  988  sudo emacs -nw fstab
+  989  sudo mount -a
+  990  cd /
+  991  ls
+  992  tail /var/log/syslog
+  993  sudo reboot now
+  994  ps aux
+  995  ps aux | grep emacs
+  996  sudo kill -9 2255 2830 2916 2922 2928 2948 2955
+  997  ps aux | grep emacs
+  998  sudo kill -9 2963 2972 2979 2999 3007 3015 3022 3059 3073
+  999  ps aux | grep emacs
+ 1000  sudo kill -9 3080 3115
+ 1001  ps aux | grep emacs
+ 1002  ps aux | grep netplan
+ 1003  sudo kill -9 3028 3065 3066 3083 3125
+ 1004  ps aux | grep netplan
+ 1005  cd /
+ 1006  ls
+ 1007  cd /
+ 1008  ls
+ 1009  sudo netplan apply
+ 1010  ifconig
+ 1011  ifconfig
+ 1012  ip -a
+ 1013  ip a
+ 1014  fg
+ 1015  ls
+ 1016  cd doc
+ 1017  cd Documents/
+ 1018  ls
+ 1019  cd ..
+ 1020  cd B
+ 1021  ls
+ 1022  cd X
+ 1023  ls
+ 1024  emacs -nw A.txt~ 
+ 1025  fg
+ 1026  cd /
+ 1027  ls
+ 1028  cd /etc
+ 1029  ls
+ 1030  cd netplan
+ 1031  ls
+ 1032  emacs -nw 99-config.yaml
+ 1033  sudo emacs -nw 99-config.yaml
+ 1034  cd ..
+ 1035  ls
+ 1036  cd NetworkManager/
+ 1037  ls
+ 1038  emacs -nw NetworkManager.conf 
+ 1039  sudo emacs -nw NetworkManager.conf 
+ 1040  fg
+ 1041  sudo apt-get install isc-dhcp-server
+ 1042  ls
+ 1043  ifconfig
+ 1044  sudo systemctl restart NetworkManager
+ 1045  ipa
+ 1046  ip a
+ 1047  sudo netplan apply
+ 1048  ip a
+ 1049  sudo systemctl restart NetworkManager
+ 1050  sudo netplan apply
+ 1051  ip a
+ 1052  sudo systemctl restart NetworkManager
+ 1053  sudo netplan apply
+ 1054  ip a
+ 1055  sudo systemctl restart NetworkManager
+ 1056  sudo netplan apply
+ 1057  ip a
+ 1058  sudo netplan apply
+ 1059  sudo systemctl restart NetworkManager
+ 1060  sudo netplan apply
+ 1061  ip a
+ 1062  ifconfig
+ 1063  sudo emacs -nw /etc/netplan/99-config.yaml
+ 1064  cd /etc/dcp
+ 1065  cd /etc/dhcp
+ 1066  ls
+ 1067  emacs -nw dhcpd.conf 
+ 1068  sudo emacs -nw /etc/netplan/99-config.yaml
+ 1069  ls
+ 1070  sudo emacs -nw dhclient.conf
+ 1071  man resolve.conf
+ 1072  man resolv.conf
+ 1073  resolvcts status
+ 1074  man resolv.conf
+ 1075  resolvctl status
+ 1076  resolvectl status
+ 1077  man resolv.conf
+ 1078  sudo sysctl -a
+ 1079  sudo sysctl -a --pattern "forward"
+ 1080  sudo sysctl net.ipv4.ip_forward=1
+ 1081  sudo sysctl -a --pattern "forward"
+ 1082  dig cpsc.roanoke.edu
+ 1083  route
+ 1084  sudo netplan apply
+ 1085  sudo systemctl restart NetworkManager
+ 1086  sudo netplan apply
+ 1087  ip a
+ 1088  sudo netplan apply
+ 1089  sudo systemctl restart NetworkManager
+ 1090  ip a
+ 1091  route
+ 1092  sudo netplan apply
+ 1093  sudo systemctl restart NetworkManager
+ 1094  ip a
+ 1095  route
+ 1096  dig cpsc.roanoke.edu
+ 1097  ip a
+ 1098  ping 10.0.70.1
+ 1099  sudo sysctl -a --pattern "forward"
+ 1100  revolvectl status
+ 1101  resolvectl status
+ 1102  sudo sysctl -a --pattern "forward"
+ 1103  dig cpsc.roanoke.edu
+ 1104  sudo iptables -L
+ 1105  suod iptables -L -t nat
+ 1106  sudo iptables -L -t nat
+ 1107  sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE
+ 1108  sudo iptables -L -t nat
+ 1109  dig cpsc.roanoke.edu
+ 1110  cd ..
+ 1111  ls
+ 1112  sudo emacs -nw sysctl.conf
+ 1113  sudo iptables -L -t nat
+ 1114  ifconfig
+ 1115  ipa
+ 1116  ip a
+ 1117  ls
+ 1118  cd /etc
+ 1119  ls
+ 1120  cd dhcp/
+ 1121  ls
+ 1122  sudo emacs -nw dhclient
+ 1123  sudo emacs -nw dhclient.conf
+ 1124  sudo emacs -nw dhcpd.conf
+ 1125  ls
+ 1126  cd /etc
+ 1127  cd netplan/
+ 1128  ls
+ 1129  emacs -nw 99-config.yaml
+ 1130  sudo emacs -nw 99-config.yaml
+ 1131  ip a
+ 1132  sudo emacs -nw 99-config.yaml
+ 1133  fg
+ 1134  sudo netplan apply
+ 1135  fg
+ 1136  sudo netplan apply
+ 1137  sudo emacs -nw 99-config.yaml
+ 1138  sudo netplan apply
+ 1139  fg
+ 1140  sudo emacs -nw 99-config.yaml
+ 1141  sudo netplan apply
+ 1142  sudo emacs -nw 99-config.yaml
+ 1143  sudo netplan apply
+ 1144  ip a
+ 1145  route
+ 1146  sudo emacs -nw 99-config.yaml
+ 1147  sudo apt install isc-dhcp-server
+ 1148  cd /etc/dhcp
+ 1149  ls
+ 1150  sudo emacs -nw dhcpd.conf
+ 1151  cd ..
+ 1152  ls
+ 1153  cd default/
+ 1154  ls
+ 1155  sudo emacs -nw isc-dhcp-server 
+ 1156  ip a
+ 1157  sudo emacs -nw isc-dhcp-server 
+ 1158  systemctl restart isc-dhcp-server
+ 1159  sudo systemctl restart isc-dhcp-server
+ 1160  sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE
+ 1161  route
+ 1162  ip a
+ 1163  cd ..
+ 1164  cd dhcp/
+ 1165  ls
+ 1166  sudo emacs -nw dhclient
+ 1167  sudo emacs -nw dhclient.conf
+ 1168  fg
+ 1169  less /var/log/syslog
+ 1170  tail -f /var/log/syslog
+ 1171  cd ..
+ 1172  cd NetworkManager/
+ 1173  ls
+ 1174  sudo emacs -nw NetworkManager.conf
+ 1175  tail -f /var/log/syslog
+ 1176  sudo sysctl net.ipv4.ip_forward=1
+ 1177  cd ..
+ 1178  cd dhcp/
+ 1179  ls
+ 1180  sudo emacs -nw dhcpd.conf
+ 1181  sudo systemctl restart isc-dhcp-server
+ 1182  sudo emacs -nw dhcpd.conf
+ 1183  history
+ 1184  history > history.txt
